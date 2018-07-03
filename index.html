@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!--Oppgave.1-->
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name = "viewport" content="width@0device-width, initial-scale=1.0">
+
+  <title> Shoppingguide for Bergen | Welcome</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+  <!-- Meny, headerbilde og newsletter er ikke gjort om til Flexbox. Vi fikk beskjed av Markus
+   om at vi bare trengte å bruke Flexbox der vi fant det naturlig, så Flexbox kommer inn lenger
+   nede på siden.-->
+  <header>
+    <div class="container">
+      <div id="branding">
+        <h1>Where to shop in Bergen</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="kart.html">Map</a></li>
+          <li><a href="toalettmap_side.html">Restrooms</a></li>
+          <li><a href="lekeplasser.html">Playgrounds</a></li>
+          <li><a href="favoritt.html">Favorite playground</a></li>
+          <li><a href="parkering.html">Parking</a></li>
+          <li><a href="store_flexbox.html">Store of the month</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div id="headerbilde">
+    <img id="image" src="./img/x.jpg" alt="Picture of Bergen">
+  </div>
+
+  <section id="newsletter">
+    <div class="container">
+      <h1>Sign up for our newsletter</h1>
+      <form>
+        <input type="email" placeholder="Enter Email..">
+        <button type="submit" class="button_1">Sign up</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Her begynner Flexbox -->
+  <div class="container-1">
+    <div class="box-1">
+      <a href="toalettmap_side.html">
+        <img src="./img/bathroom.jpg" alt="Bathroom"></a>
+      <h3>Restrooms</h3>
+      <p> Find out where you can find the<br> closest restroom!</p>
+    </div>
+    <div class="box-2">
+      <a href="store_flexbox.html">
+         <img src="./img/store.jpg" alt="Store"></a>
+      <h3>Store of the month</h3>
+      <p>Learn more about our favorite <br> store this month.</p>
+    </div>
+    <div class="box-3">
+      <a href="lekeplasser.html">
+      <img src="./img/a1.jpg" alt="Playground"></a>
+      <h3>Playground</h3>
+      <p>Check out where you can take your <br> kids playing in Bergen.</p>
+    </div>
+    <div class="box-4">
+      <a href="kart.html">
+      <img src="./img/map.jpg" alt="Map"></a>
+      <h3>Map</h3>
+      <p>Scroll through our map to see where you<br> can shop till you drop.</p>
+    </div>
+  </div>
+
+  <!-- Ikke Flexbox -->
+  <div class="container-7">
+    <h3 id="tekst">What are you looking for?<h3>
+  </div>
+
+  <!-- Her fortsetter Flexbox -->
+  <div class="container-2">
+    <div class="box1">
+      <a href="favoritt.html">
+      <img src="./img/a2.jpg" alt="Playground"></a>
+        <h3>Favorite playground</h3>
+    <p>Set your favorite playground in Bergen <br> and find the closest one <br> nearby.</p>
+  </div>
+  <div class="box2">
+    <a href="favoritt.html">
+      <img src="./img/a3.jpg" alt="Parking"></a>
+    <h3>Parking</h3>
+    <p>See where you can park your car<br> in Stavanger</p>
+  </div>
+  <div class="box3">
+    <img src="./img/shoes.jpg" alt="Shoes">
+    <h3>Shoes Shoes Shoes</h3>
+    <p>Discover the best shoe stores <br> in Bergen right here.</p>
+  </div>
+  <div class="box4">
+    <a href="toalettmap_side.html">
+      <img src="./img/shop.jpg" alt="Bathroom"> </a>
+    <h3>Shopping areas</h3>
+    <p>Let us take you through the <br>different shopping areas in Bergen.</p>
+  </div>
+  </div>
+
+  <!-- Footer (flexbox) -->
+  <div class="container-3">
+    <img src="./img/icon.png">
+    <p>Bergen Shoppingguide, Copyright &copy; 2018</p>
+  </div>
+
+</body>
+
+</html>

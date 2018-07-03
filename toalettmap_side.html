@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--Oppgave.4-->
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name = "viewport" content="width@0device-width, initial-scale=1.0">
+  <script src="toalettListe-1.js"></script>
+  <script src="avansert-søk.js"></script>
+  <style>
+    #Map {
+      height: 400px;
+      width: 100%;
+    }
+  </style>
+
+  <title> Shoppingguide for Bergen | Bathrooms </title>
+  <link rel="stylesheet" type="text/css" href="toalettmap.css">
+</head>
+
+<body>
+  <!-- Toppmeny og headerbilde -->
+  <header>
+    <div class="conatainer">
+      <div id="branding">
+        <h1>Restrooms in Bergen</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="kart.html">Map</a></li>
+          <li><a href="toalettmap_side.html">Restrooms</a></li>
+          <li><a href="lekeplasser.html">Playgrounds</a></li>
+          <li><a href="favoritt.html">Favorite playground</a></li>
+          <li><a href="parkering.html">Parking</a></li>
+          <li><a href="store_flexbox.html">Store of the month</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div id="headerbilde">
+    <img id="image" src="./img/bad.jpg" alt="Bathroom">
+  </div>
+
+  <section>
+    <h2 id="tekst">Where to use the restroom<h2>
+  </section>
+
+            <fieldset>
+              <input type="text" id="myInput" placeholder="Search for toilets.." >
+             <button onclick= "hurtigSok()">Find toilet</button>
+             <!-- Alt av avansert søk, select, checkbox, søkefelt.-->
+            <button class="collapsible"onclick="myFunction()">Open advanced search</button>
+            <div class="content">
+          <form  method="POST" enctype="multipart/form-data">
+            <br><div id="advanced_search"></br>
+              <input type="checkbox" id="rullestolTilgang">Wheelchair<br>
+              <input type="checkbox" id="stelleromTilgang">Nursery<br>
+              <input type="checkbox" id="free">Free<br>
+              <input type="checkbox" id="open_now">Open now<br>
+
+            <br><label for="kjønn"> Gender:</label></br>
+                  <select id="gender">
+                      <option value="">Choose gender</option>
+                      <option value="Dame">Lady</option>
+                      <option value="Herre">Man</option>
+                  </select>
+              <br><label for="maksPris"> Max price:</label></br>
+                <input id="maksPris" name="maksPris" type="number" min="0" max="12" value="0" required>
+
+              <br><label for="Klokkeslett">Time:</label></br>
+                <input id="Klokkeslett" type="time" name="time">
+              </div>
+            </form>
+          </div>
+            <ol id="toalettene">
+            </ol>
+        </form>
+      <div id="Map"></div>
+      <script defer async
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNktKQEbOb6d_XW5CDYCMaDPuYlDWLfDQ&callback=initMap">
+      </script>
+
+  <!--Footer-->
+    <div class="container-3">
+      <img src="./img/icon.png">
+        <p>Bergen Shoppingguide, Copyright &copy; 2018</p>
+    </div>
+    </body>
+  </html>
+  <!--lage en dag input så da kan jeg finne det. tid.sondag, tid_hverdag-->

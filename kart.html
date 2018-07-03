@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="kart.css">
+    <meta name = "viewport" content="width@0device-width, initial-scale=1.0">
+  <META CHARSET="UTF-8">
+</head>
+
+<body>
+  <!-- Toppmeny og headerbilde -->
+  <header>
+    <div class="container">
+      <div id="branding">
+        <h1>Where to shop in Bergen | Map</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="kart.html">Map</a></li>
+          <li><a href="toalettmap_side.html">Restrooms</a></li>
+          <li><a href="lekeplasser.html">Playgrounds</a></li>
+          <li><a href="favoritt.html">Favorite playground</a></li>
+          <li><a href="parkering.html">Parking</a></li>
+          <li><a href="store_flexbox.html">Store of the month</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div id="headerbilde">
+    <img id="image" src="./img/kart.jpg" alt="Picture of Bergen">
+  </div>
+
+  <section id="showcase">
+    <div class="container">
+    </div>
+  </section>
+
+  <section>
+    <h3 id="tekst">See where you can shop till you drop<h3>
+   </section>
+
+
+  <!-- Bilder og tekst om hvilke shoppingområder i Bergen som er markert på kartet-->
+   <div class="container-1">
+     <div class="box-1">
+       <img src="./img/skostredet.jpg" alt="Picture of Skostredet">
+         <h3>Skostredet</h3>
+    <p>Skostredet has lots of cool <br>vintage stores and unique shops.</p>
+    </div>
+    <div class="box-2">
+      <a href="store_flexbox.html">
+        <img src="./img/gagaten.jpg" alt="Picture of Gågaten"></a>
+      <h3>Gågaten</h3>
+      <p>In Gågaten you'll find urban <br> and cool stores.</p>
+    </div>
+    <div class="box-3">
+      <img src="./img/strandkaien.jpg" alt="Picture of Strandkaien">
+      <h3>Strandkaien</h3>
+      <p>Along Strandkaien you'll find cute <br>cafés and decor shops.</p>
+    </div>
+    <div class="box-4">
+      <a href="kart.html">
+     <img src="./img/galleriet.jpg" alt="Picture of Galleriet"></a>
+      <h3>Galleriet</h3>
+      <p>At Galleriet you'll find lots of chain<br> stores and restaurants.</p>
+    </div>
+    </div>
+
+    <!-- Kart med fire markører -->
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var location = {
+          lat: 60.396094,
+          lng: 5.316492
+        };
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 14,
+          center: location
+        });
+        var marker = new google.maps.Marker({
+          position: location,
+          map: map
+        });
+        addMarker({
+          lat: 60.394139,
+          lng: 5.327747
+        });
+        addMarker({
+          lat: 60.393303,
+          lng: 5.325022
+        });
+        addMarker({
+          lat: 60.395324,
+          lng: 5.328545
+        });
+
+        function addMarker(coords) {
+          var marker = new google.maps.Marker({
+            position: coords,
+            map: map,
+          })
+        }
+      }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyip3R0WtRKL_v7fvy2vPB1uqdNFCKmmQ&callback=initMap">
+    </script>
+
+    <!-- Footer (flexbox) -->
+    <div class="container-3">
+      <img src="./img/icon.png">
+      <p>Bergen Shoppingguide, Copyright &copy; 2018</p>
+    </div>
+
+</body>
+
+</html>
+
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name = "viewport" content="width@0device-width, initial-scale=1.0">
+  <title> Shoppingguide for Bergen | Store of the month</title>
+  <link rel="stylesheet" type="text/css" href="store_css.css">
+
+</head>
+
+<body>
+
+  <!-- Toppmeny og headerbilde -->
+  <header>
+    <div class="header">
+      <div id="branding">
+        <h1>Store of the month</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="kart.html">Map</a></li>
+          <li><a href="toalettmap_side.html">Restrooms</a></li>
+          <li><a href="lekeplasser.html">Playgrounds</a></li>
+          <li><a href="favoritt.html">Favorite playground</a></li>
+          <li><a href="parkering.html">Parking</a></li>
+          <li><a href="store_flexbox.html">Store of the month</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div id="headerbilde">
+    <img id="image" src="./img/image.jpg" alt="Pictures of outfits">
+  </div>
+
+  <section>
+    <h2 id="tekst">I N F I N I T Y<h2>
+</section>
+
+
+<table style="width:100%">
+  <tr>
+ <section id="boxes">
+  <div class="container">
+   <div class="box">
+
+
+  <!-- Container-1 inneholder et bilde og en tekstboks -->
+     <div class="container-1">
+<div class="box-1">
+
+ <h1>INFINITY</h1>
+
+<p>
+Our favorite store this month is the multibrand store INFINITY. You can
+find INFINITY at three different locations. In the center of Bergen you'll
+find the store at the shopping mall Galleriet. They are also represented
+at Lagunen and Horisont. Here you can find awesome Scandinavian brands such
+as Samsøe Samsøe, Arnie Says, Holzweiler, By Malene Birger, By Malina, Maud
+and many, many more. Scroll down to the map to see which INFINITY store
+is the closest to you, and happy shopping!
+<br>
+<br>
+Check out their blog <a href="http://infinityblogg.no">here</a>, and their
+online shop <a href="http://infinityshop.no">here</a>!
+</p>
+</div>
+<div class="box-2">
+   <img src="./img/store.jpg" alt="Store">
+</div>
+</div>
+
+<div id=tekst2>
+  <h3 id="tekst">Find your closest INFINITY store<h3>
+</div>
+
+<div id="map"></div>
+      <script>
+    function initMap() {
+      var location = {lat: 60.393167, lng: 5.325100};
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 10,
+        center: location
+      });
+      var marker = new google.maps.Marker({
+        position: location,
+        map: map
+      });
+      addMarker({lat: 60.297193, lng: 5.330725});
+      addMarker({lat: 60.453405, lng: 5.324980});
+
+      function addMarker(coords){
+        var marker = new google.maps.Marker({
+          position:coords,
+          map:map,
+        })
+      }
+      }
+      </script>
+      <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyip3R0WtRKL_v7fvy2vPB1uqdNFCKmmQ&callback=initMap">
+    </script>
+
+  <!-- Footer -->
+<section id="footer2">
+    <footer>
+      <img src="./img/icon.png">
+      <p>Bergen Shoppingguide, Copyright &copy; 2018</p>
+
+    </footer>
+  </section>
+
+  </body>
+  </html>

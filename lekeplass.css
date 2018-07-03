@@ -1,0 +1,146 @@
+/*Oppgave.6*/
+body {
+  font-family: Arial, Helvetica, sans-sans-serif;
+  font-size: 15px;
+  line-height: 1, 5;
+  padding: 0;
+  margin: 0;
+  background-color: white;
+  flex-wrap: wrap;
+}
+
+/* Global */
+
+.container {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Header **/
+
+header {
+  background: #f6f6f6;
+  color: #black;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: #f9efef 5px solid;
+  font-family: didot-bold;
+}
+
+header a {
+  color: #7c7878;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-family: code-bold;
+}
+
+header ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+header li {
+  float: left;
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+
+header #branding {
+  float: left;
+  padding-left: 70px;
+  padding-right: 50px;
+}
+
+header #branding h1 {
+  margin: 0;
+}
+
+header nav {
+  float: right;
+  margin-top: 10px;
+  padding-right: 70px;
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#lekeplassene {
+  overflow: scroll;
+  height: 400px;
+  background-color: #f6f6f6;
+}
+
+#image {
+  width: 100%;
+}
+
+#tekst {
+  color: black;
+  background-color: #f6f6f6;
+  font-family: code-bold;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.container-3 {
+  padding: 20px;
+  margin-top: 20px;
+  color: #7c7878;
+  background-color: #f3e7e7;
+  text-align: center;
+}
+
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #3e8e41;
+}
+
+/* Media Queries */
+
+@media(max-width: 768px){
+  .container-1
+  .container-2
+  header #branding,
+  header nav,
+  header nav li,
+  #boxes .box,
+  article#main-col,
+  aside#sidebar{
+    float:none;
+    text-align:center;
+    width:100%;
+  }
+
+  header{
+    padding-bottom:20px;
+  }
+
+  header h1{
+    font-size: 25px;
+      align-items: center;
+  }
+
+  header ul {
+    padding-top: 20px;
+  }
+  header nav {
+    float: center;
+    margin-top: 10px;
+}
+  #showcase h1{
+    margin-top:40px;
+  }

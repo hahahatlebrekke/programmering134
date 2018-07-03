@@ -1,0 +1,71 @@
+<!--Oppgave.10-->
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name = "viewport" content="width@0device-width, initial-scale=1.0">
+  <style>
+    #map {
+      height: 400px;
+      width: 100%;
+    }
+  </style>
+
+  <title> Shoppingguide for Bergen | Parking </title>
+  <link rel="stylesheet" type="text/css" href="parkering.css">
+</head>
+
+<body>
+  <!-- Toppmeny og headerbilde -->
+  <header>
+    <div class="conatainer">
+      <div id="branding">
+        <h1>Parking in Stavanger</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="kart.html">Map</a></li>
+          <li><a href="toalettmap_side.html">Restrooms</a></li>
+          <li><a href="lekeplasser.html">Playgrounds</a></li>
+          <li><a href="favoritt.html">Favorite playground</a></li>
+          <li><a href="parkering.html">Parking</a></li>
+          <li><a href="store_flexbox.html">Store of the month</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div id="headerbilde">
+    <img id="image" src="./img/parkering.jpg" alt="Picture of mountains with snow">
+  </div>
+
+  <section>
+    <h2 id="tekst">Parking in Stavanger<h2>
+  </section>
+
+  <!-- Søkefelt (hurtigsøk) -->
+  <input type="text" id="myInput" placeholder="Search for parking.." >
+     <button onclick="hurtigSok()">
+     Finn parkering
+   </button>
+
+    <!-- Liste over parkeringsplasser -->
+      <ol id="parkering">
+      </ol>
+
+   <!-- Kart -->
+  <div id="Map"></div>
+
+  <!--Footer-->
+  <div class="container-3">
+    <img src="./img/icon.png">
+      <p>Bergen Shoppingguide, Copyright &copy; 2018</p>
+  </div>
+  <script src="parkering.js"></script>
+  <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMWoGUAfRuzOHKCroFpUfM1yBQYe8ewfg&callback=initMap">
+      </script>
+
+    </body>
+  </html>

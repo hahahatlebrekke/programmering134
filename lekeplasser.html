@@ -1,0 +1,71 @@
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name = "viewport" content="width@0device-width, initial-scale=1.0">
+  <style>
+    #map {
+      height: 400px;
+      width: 100%;
+      display: flex;
+    }
+  </style>
+
+  <title> Shoppingguide for Bergen | Playgrounds </title>
+  <link rel="stylesheet" type="text/css" href="lekeplass.css">
+</head>
+
+<body>
+  <!-- Toppmeny og headerbilde -->
+  <header>
+    <div class="container">
+      <div id="branding">
+        <h1>Playgrounds in Bergen</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="kart.html">Map</a></li>
+          <li><a href="toalettmap_side.html">Restrooms</a></li>
+          <li><a href="lekeplasser.html">Playgrounds</a></li>
+          <li><a href="favoritt.html">Favorite playground</a></li>
+          <li><a href="parkering.html">Parking</a></li>
+          <li><a href="store_flexbox.html">Store of the month</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div id="headerbilde">
+    <img id="image" src="./img/lekeplass.jpg" alt="Picture of playground">
+  </div>
+
+  <section>
+    <h2 id="tekst">Where to play in Bergen<h2>
+  </section>
+
+  <section>
+    <h4 id="tekst2">Scroll gjennom listen for å se lekeplassene i Bergen<h4>
+  </section>
+
+    <!-- En scrollemeny over lekeplassene i Bergen -->
+      <ol id="lekeplassene">
+      </ol>
+    </div>
+  <!-- Kart der lekeplassene er markert. Tallet i listen samsvarer med tallet på markørene -->
+  <div id="Map"></div>
+
+
+  <!--Footer-->
+  <div class="container-3">
+    <img src="./img/icon.png">
+      <p>Bergen Shoppingguide, Copyright &copy; 2018</p>
+  </div>
+  <script src="playGround.js"></script>
+  <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1Az0VHrpOiSf-kXZkIbrWqHfWi4d08B4&callback=initMap">
+      </script>
+
+    </body>
+  </html>
